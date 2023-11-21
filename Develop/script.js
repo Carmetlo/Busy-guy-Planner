@@ -24,10 +24,10 @@ $(function () {
     });
   }
 
-  $(".saveBtn").on("click", function () {
+  $(".container-fluid").on("click", ".saveBtn", function () {
     var blockId = $(this).closest(".time-block").attr("id");
-    var eventText = $(this).siblings(".description").val();
-    localStorage.setItem(blockId, eventText);
+    var savedEventText = $(this).siblings(".description").val();
+    localStorage.setItem(blockId, savedEventText);
   });
   
   function retrieveAndSetUserInput() {
