@@ -1,8 +1,9 @@
 # Busy-guy Planer
 Deployed Application:  https://carmetlo.github.io/Busy-guy-Planner/
-Reference code source:  https://github.com/coding-boot-camp/crispy-octo-meme
-Note:  The basic structure of all of the files originated from this code source.  The main elements in the html file and css file were dominantly coded by the source code.  You can view the origin source at the repository above or take a peek at my commit time-line to see the journey I made to develop this application.
+## Source Code Credit
+This project has been developed based on the source code provided by [Coding Boot Camp](https://github.com/coding-boot-camp/crispy-octo-meme). The basic structure of all files originated from this source. The main elements in the HTML and CSS files were dominantly retrieved from the source code.  You can view the original source at the repository linked above, or take a peek at my commit timeline on my github account: https://github.com/Carmetlo/Busy-guy-Planner to see my complete journey when developing this application.
 
+## Application Description
 Here is a planner that anyone can use to schedule the different events they have during the day.  As your day goes by, your past is highlighted in gray, your current time period is in red, and green is for any future times.  
 ![Alt text](image-2.png)
 As you save events, a message is displayed confirming that it has been saved to local storage.  This way, even if you need to close the page, your times will still be displayed
