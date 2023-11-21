@@ -41,7 +41,22 @@ $(function () {
     });
   }
 
+  function generateTimeBlocks() {
+    var container = $(".container-fluid");
+
+    for (var i = 9; i <= 17; i++) {
+      var timeBlock = $("<div>").attr("id", "hour-" + i).addClass("row time-block");
+      var hourDiv = $("<div>").addClass("col-2 col-md-1 hour text-center py-3").text(i + "AM");
+      var textArea = $("<textarea>").addClass("col-8 col-md-10 description").attr("rows", "3")
+        .append($("<i>").addClass("fas fa-save").attr("aria-hidden", "true"));
+
+        timeBlock.append(hourDiv, textArea, saveBtn);
+        container.append(timeBlock);
+    }
+  }
+
   updateCurrentDate();
+  generateTimeBlocks();
   colorCodeTimeBlocks();
   retrieveAndSetUserInput();
 });
