@@ -4,23 +4,12 @@ body {
 }
 
 hr.my-4 {
-  margin-top: 0;
   border-bottom: 15px solid #000;
   width: 100%;
-}
-
-.container-fluid {
-  position: relative;
+  margin-bottom: 0;
 }
 
 #saveMessage {
-  position: absolute;
-  left: 44%;
-  background-color: #f8d7da;
-  background-size: auto;
-  padding: 10px;
-  border-radius: 5px;
-  font-size: 0.8rem;
 }
 
 textarea {
@@ -38,6 +27,7 @@ textarea {
 
 .time-block {
   border-radius: 15px;
+  margin-top: 0;
 }
 
 .row {
