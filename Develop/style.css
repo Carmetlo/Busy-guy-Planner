@@ -14,7 +14,10 @@ hr.my-4 {
 }
 
 #saveMessage {
+  position: absolute;
+  left: 44%;
   background-color: #f8d7da;
+  background-size: auto;
   padding: 10px;
   border-radius: 5px;
   font-size: 0.8rem;
