@@ -19,12 +19,15 @@
     <h1 class="display-3">Work Day Scheduler</h1>
     <p class="lead">A simple calendar app for scheduling your work day</p>
     <p id="currentDay" class="lead"></p>
+    <div id ="messageArea"></div>
     <button id="clearLocalStorage" class="btn btn-danger">Clear Local Storage</button>
+    <!-- big black line to separate -->
     <hr class="my-4">
     <div id="saveMessage" class="alert alert-success d-none" role="alert">
-    <i class="fas fa-check-circle"></i> Appointment added to local storage.</div>
+    <i class="fas fa-check-circle"></i> Appointment added to local storage.✅</div>
   </header>
-  <div class="container-fluid px-5" style="margin-top: -40px;">
+  <!-- Added a little bit of margin to be more flush with the top -->
+  <div class="container-fluid px-5";>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"

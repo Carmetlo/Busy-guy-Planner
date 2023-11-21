@@ -8,9 +8,16 @@ hr.my-4 {
   border-bottom: 15px solid #000;
   width: 100%;
 }
+
+.container-fluid {
+  position: relative;
+}
+
 #saveMessage {
+  background-color: #f8d7da;
+  padding: 10px;
+  border-radius: 5px;
   font-size: 0.8rem;
-  margin-top: 5px;
 }
 
 textarea {
