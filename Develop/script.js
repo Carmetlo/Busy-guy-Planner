@@ -12,7 +12,7 @@ $(function () {
     if (confirm("Are you sure you want to clear your schedule?")) {
       localStorage.clear();
       retrieveAndSetUserInput();
-      $("#saveMessage").text("Local storage cleared!").removeClass("d-none");
+      $("#saveMessage").text("Local storage cleared, refresh the page").removeClass("d-none");
 
       setTimeout(function () {
         $("#saveMessage").addClass("d-none");
