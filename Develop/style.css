@@ -3,15 +3,11 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
 }
-
+/* Styling to add my line across the page */
 hr.my-4 {
   border-bottom: 15px solid #000;
   width: 100%;
   margin: 0;
-}
-
-#saveMessage {
-  background-clip: border-box;
 }
 
 textarea {
@@ -26,7 +22,7 @@ textarea {
 .description {
   white-space: pre-wrap;
 }
-
+/* Added a margin to the top to help clear out some space */
 .time-block {
   border-radius: 15px;
   margin-top: 0;

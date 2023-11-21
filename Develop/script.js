@@ -1,10 +1,11 @@
+//The DOM to be ready before running the code inside of it
 $(function () {
-
+  //Using dayjs to get the current date
   function updateCurrentDate() {
     var currentDate = dayjs().format('dddd, MMMM D, YYYY');
     $("#currentDay").text(currentDate);
   }
-
+  //Clearing local storage with button if one so chooses
   $("#clearLocalStorage").on("click", function () {
     if (confirm("Are you sure you want to clear your schedule?")) {
       localStorage.clear();
@@ -16,7 +17,7 @@ $(function () {
       }, 3000);
     }
   });
-
+  //Color coding time blocks based on current time
   function colorCodeTimeBlocks() {
     var currentHour = dayjs().hour();
 
@@ -32,7 +33,7 @@ $(function () {
       }
     });
   }
-
+  //Saving user input to local storage, displaying a message to the user that their input has been saved
   $(".container-fluid").on("click", ".saveBtn", function () {
     var blockId = $(this).closest(".time-block").attr("id");
     var savedEventText = $(this).siblings(".description").val();
@@ -44,7 +45,7 @@ $(function () {
       $("#saveMessage").addClass("d-none");
   }, 3000);
 });
-  
+  //Retrieving user input from local storage and setting it to the text area
   function retrieveAndSetUserInput() {
     $(".time-block").each(function () {
       var blockId = $(this).attr("id");
@@ -55,10 +56,10 @@ $(function () {
       }
     });
   }
-
+  //Generating time blocks for the work day, 9-5 with AM/PM cycle
   function generateTimeBlocks() {
     var container = $(".container-fluid");
-
+    
     for (var i = 9; i <= 17; i++) {
       var timeBlock = $("<div>").attr("id", "hour-" + i).addClass("row time-block");
       var hourDiv = $("<div>").addClass("col-2 col-md-1 hour text-center py-3").text(i + "AM");
