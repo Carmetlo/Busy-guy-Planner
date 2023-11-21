@@ -3,6 +3,16 @@ body {
   font-size: 16px;
 }
 
+hr.my-4 {
+  margin-top: 0;
+  border-bottom: 15px solid #000;
+  width: 100%;
+}
+#saveMessage {
+  font-size: 0.8rem;
+  margin-top: 5px;
+}
+
 textarea {
   background: transparent;
   border: none;

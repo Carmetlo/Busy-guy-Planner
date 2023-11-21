@@ -8,6 +8,18 @@ $(function () {
     $("#currentDay").text(currentDate);
   }
 
+  $("#clearLocalStorage").on("click", function () {
+    if (confirm("Are you sure you want to clear your schedule?")) {
+      localStorage.clear();
+      retrieveAndSetUserInput();
+      $("#saveMessage").text("Local storage cleared!").removeClass("d-none");
+
+      setTimeout(function () {
+        $("#saveMessage").addClass("d-none");
+      }, 3000);
+    }
+  });
+
   function colorCodeTimeBlocks() {
     var currentHour = dayjs().hour();
 
@@ -28,7 +40,13 @@ $(function () {
     var blockId = $(this).closest(".time-block").attr("id");
     var savedEventText = $(this).siblings(".description").val();
     localStorage.setItem(blockId, savedEventText);
-  });
+
+    $("#saveMessage").removeClass("d-none");
+
+    setTimeout(function () {  
+      $("#saveMessage").addClass("d-none");
+  }, 3000);
+});
   
   function retrieveAndSetUserInput() {
     $(".time-block").each(function () {
